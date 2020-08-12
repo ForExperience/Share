@@ -1,0 +1,12 @@
+N = int(input())
+g_s = [0] * N
+
+for i in range(N):
+    [a, b] = [int(j) for j in input().split()]
+    g_s[i] = [b, a]
+
+g_s.sort(reverse=True)
+
+for i in range(N):
+    [a, b] = g_s[i]
+    print(b, a)
